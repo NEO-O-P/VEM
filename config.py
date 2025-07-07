@@ -7,11 +7,11 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "25610347"))
+API_HASH = getenv("API_HASH", "c421be09ee9b9af3d13dbf9abb03483c")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", )
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
@@ -19,10 +19,10 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 600))
 
 # Chat id of a group for logging bot's activities
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", None))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001511253627"))
 
 # Get this value from @MissRose_Bot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", None))
+OWNER_ID = int(getenv("OWNER_ID", "8140988754"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -39,8 +39,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", ""
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHAT", "https://t.me/+kdqqdy9-rHxmYTk1")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/+kdqqdy9-rHxmYTk1")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHAT", "https://t.me/ABOUT_VENOM_OP")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/NOBITA_SUPPORT")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -81,12 +81,12 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/6ncc2n.jpg"
+    "START_IMG_URL", "https://iili.io/F0IJZq7.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/6ncc2n.jpg"
+    "PING_IMG_URL", "https://iili.io/F0IJjbR.md.jpg"
 )
-PLAYLIST_IMG_URL = "https://files.catbox.moe/6ncc2n.jpg"
+PLAYLIST_IMG_URL = "https://iili.io/F0I2qn2.md.jpg"
 STATS_IMG_URL = "https://files.catbox.moe/6ncc2n.jpg"
 TELEGRAM_AUDIO_URL = "https://files.catbox.moe/6ncc2n.jpg"
 TELEGRAM_VIDEO_URL = "https://files.catbox.moe/6ncc2n.jpg"
